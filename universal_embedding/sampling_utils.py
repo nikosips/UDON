@@ -71,7 +71,6 @@ class Sampler():
 		for dataset_name in unnorm_weights:
 			self.sampling_weights[dataset_name] = unnorm_weights[dataset_name]/normalizer #add small constant in the denominator for instability issues?
 
-
 		#in the case that the dataset was not seen in the last 
 		#update_sampler steps, because it was not sampled at all because
 		#of very small sampling weight,

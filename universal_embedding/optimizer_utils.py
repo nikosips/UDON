@@ -17,11 +17,11 @@ def backbone_lr(config):
 
 
 def get_multioptimizer(
-    optimizer_config,
-    classifier_lr_fn,
-    backbone_lr_fn,
-    params,
-    config,
+  optimizer_config,
+  classifier_lr_fn,
+  backbone_lr_fn,
+  params,
+  config,
 ):
   """Makes a Flax MultiOptimizer with a separate backbone optimizer."""
 
@@ -46,6 +46,6 @@ def get_multioptimizer(
   backbone_mask = backbone_traversal.update(lambda _: True, all_false)
 
   return optax.chain(
-      optax.masked(backbone_optim, backbone_mask),
-      optax.masked(classifier_optim, classifer_mask),
+    optax.masked(backbone_optim, backbone_mask),
+    optax.masked(classifier_optim, classifer_mask),
   )
