@@ -132,8 +132,13 @@ Now that the data are ready, you are ready to train and evaluate embeddings on t
 
 - - - -
 
-## State of repository
+## Trained checkpoints
 
+We provide some trained checkpoints with the UDON method
+
+* [CLIP pretrained UDON checkpoint](https://cmp.felk.cvut.cz/univ_emb/finetuned_checkpoints/clip_uscrr_iccv_jax_checkpoint)
+
+## State of repository
 
 The repository is currently under update and more features will be coming soon.
 Soon, UDON checkpoints will be released.
