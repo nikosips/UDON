@@ -1,7 +1,7 @@
 # Official Repository for the paper: <br /> UDON: Universal Dynamic Online distillatioN for generic image representations
 
 
-This repository contains the implementation of the paper [UDON: Universal Dynamic Online distillatioN for generic image representations](https://arxiv.org/abs/2406.08332).
+This repository contains the official implementation of the **NeurIPS '24** paper [UDON: Universal Dynamic Online distillatioN for generic image representations](https://arxiv.org/abs/2406.08332).
 It currently supports the training of universal embeddings on the UnED dataset with the UDON training pipeline, as well as evaluation on the UnED test set.
 The implementation builds upon the codebase of the [UnED repository](https://github.com/nikosips/Universal-Image-Embeddings), which relies on the [Scenic](https://github.com/google-research/scenic) computer vision library, which is based on [JAX](https://github.com/google/jax) and [Flax](https://github.com/google/flax).
 
